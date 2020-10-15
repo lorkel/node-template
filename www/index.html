@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Node Template</title>
+    <link type="text/css" rel="stylesheet" href="/_css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/_css/global.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>hello world</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="./_js/jquery-3.5.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./_js/bootstrap.min.js"></script>
+    <script src="./_js/feather.min.js"></script>
+
+    <script>
+      feather.replace();
+      var socket = io({transports: ['websocket'], upgrade: false});
+
+      // https://socket.io/docs/
+      // https://stackoverflow.com/questions/16423150/socket-io-subscribe-to-multiple-channels
+      // https://stackoverflow.com/questions/19150220/creating-rooms-in-socket-io
+      // https://socket.io/docs/rooms-and-namespaces/
+      // http://drewww.github.io/socket.io-benchmarking/
+    </script>
+  </body>
+</html>

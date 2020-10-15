@@ -1,0 +1,28 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "description": "Node Template",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lorkel@github.com/lorkel/node-template.git"
+  },
+  "author": "Lauren Kelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lorkel/node-template/issues"
+  },
+  "homepage": "https://github.com/lorkel/node-template#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.4.2"
+  }
+}
