@@ -9,14 +9,13 @@ gulp.task("nodemon", cb => {
   let started = false;
 
   return nodemon({
-    script: "app.js",
+    script: "server/index.js",
     ignore: [
       '__misc/',
-      'www/_json/'
+      'client'
     ],
     env: {
-      // support auth
-      'EXAMPLE_KEY': 'loremipsum'
+      // located in .env
     }
   }).on("start", () => {
     if (!started) {
@@ -35,7 +34,7 @@ gulp.task(
         ws: true
       },
       files: ['**/*.*'],
-      ignore: ['www/_json/*.*'],
+      ignore: ['client/*.*'],
       port: 9000
     });
 
